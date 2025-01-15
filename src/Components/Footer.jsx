@@ -2,8 +2,8 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div className="bg-[#f5f5e9] py-12 ">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between px-6">
+    <div className="bg-[#f5f5e9] py-10 ">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between px-6 ">
 
   
         <div className="flex flex-col items-center md:items-start space-y-4 text-yellow-700">
@@ -38,8 +38,6 @@ const Footer = () => {
             Facebook
           </a>
         </div>
-
-        {/* Footer Right Section */}
         <div className="mt-6 md:mt-0">
           <p className="text-sm opacity-75 text-yellow-700">
             Designed and Developed by <span className="font-semibold">Bibha Khadka</span>

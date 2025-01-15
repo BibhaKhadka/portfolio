@@ -1,42 +1,44 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Add this in your global CSS file (e.g., App.css) */
+.typing-animation {
+  /* display: inline-block; */
+  /* border-right: 3px solid #000; Cursor effect */
+  padding-right: 5px;
+  animation: typing 3s steps(30) 1s forwards, blink 0.75s step-end infinite;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
+@keyframes typing {
   from {
-    transform: rotate(0deg);
+    width: 0;
   }
   to {
-    transform: rotate(360deg);
+    width: 100%;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+@keyframes blink {
+  50% {
+    border-color: transparent;
   }
 }
-
-.card {
-  padding: 2em;
+/* Add this in your global CSS */
+.scale-up {
+  transform: scale(1.2); /* Makes the logo scale up */
+  opacity: 1; /* Ensures the element is visible */
+  transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth transition */
 }
 
-.read-the-docs {
-  color: #888;
+.scale-up {
+  transform: scale(1);
+  opacity: 0.7;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
